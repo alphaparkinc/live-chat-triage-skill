@@ -1,0 +1,56 @@
+{
+  "name": "live-chat-triage-skill",
+  "version": "1.0.0",
+  "description": "Triage incoming customer chat messages by intent, urgency, and sentiment. Route to the right team and suggest instant automated responses.",
+  "author": "alphaparkinc",
+  "category": "support",
+  "tags": [
+    "live-chat",
+    "triage",
+    "routing",
+    "customer-support",
+    "NLP"
+  ],
+  "inputs": {
+    "message": {
+      "type": "string",
+      "description": "Customer chat message."
+    },
+    "customer_context": {
+      "type": "object",
+      "description": "Optional context: order_id, past_tickets, is_vip."
+    },
+    "available_teams": {
+      "type": "array",
+      "description": "Teams available for routing (e.g. ['billing', 'shipping', 'returns', 'general'])."
+    }
+  },
+  "outputs": {
+    "intent": {
+      "type": "string",
+      "description": "Detected intent category."
+    },
+    "urgency": {
+      "type": "string",
+      "description": "Urgency level: critical / high / medium / low."
+    },
+    "sentiment": {
+      "type": "string",
+      "description": "Customer sentiment: negative / neutral / positive."
+    },
+    "routed_to": {
+      "type": "string",
+      "description": "Recommended team to handle the message."
+    },
+    "suggested_response": {
+      "type": "string",
+      "description": "Instant automated response suggestion."
+    },
+    "escalate": {
+      "type": "boolean",
+      "description": "Whether to escalate to a human agent immediately."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
