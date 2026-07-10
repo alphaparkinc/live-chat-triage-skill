@@ -1,4 +1,4 @@
-# live-chat-triage-skill
+# genpark-live-chat-triage-skill
 
 > **GenPark AI Agent Skill** -- Triage customer chat messages by intent, urgency, and sentiment. Route to the right team and suggest instant responses.
 
