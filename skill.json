@@ -1,5 +1,5 @@
 {
-  "name": "live-chat-triage-skill",
+  "name": "genpark-live-chat-triage-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Triage incoming customer chat messages by intent, urgency, and sentiment. Route to the right team and suggest instant automated responses.",
   "author": "genpark",
